@@ -31,8 +31,8 @@ export class TurbotableComponent implements OnInit {
 
   ngOnInit() {
 
+    this.loading = false;
     if (!this.lazyLoadingEnabled) {
-      alert('init');
       this.dataService.getData(this.path).subscribe(data => {
         this.displayedRows = data;
       });
