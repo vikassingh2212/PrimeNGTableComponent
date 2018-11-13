@@ -1,0 +1,20 @@
+<app-turbotable 
+[headerEnabled]="true" 
+[path]="'https://172.29.38.244:9192/api/posts'" 
+[displayedCols]="[
+{ field: 'userId', header: 'UserID'},
+{ field: 'id', header: 'Id'},
+{ field: 'title', header: 'Title' },
+{ field: 'body', header: 'Body'}
+]"
+[lazyLoadingEnabled]="true" 
+[paginationEnabled]="true" 
+[columnSortMode]="'multiple'" 
+[pageSize]="5" 
+[pageSizeOptions]="[5,10, 20, 30]"
+[totalRecordSize]="100" 
+[rowSelectionMode]="'off'"
+[columnFilterEnabled]="true"
+[globalFilterEnabled]="true">
+
+</app-turbotable>
